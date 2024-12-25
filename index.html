@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>BestMan Home</title>
+  <style>
+    /* 全局样式重置与基础设置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    /* 卡片布局容器 */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 单个卡片 */
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* 卡片内大图片 */
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 卡片中的文字块 */
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    /* Learn More 按钮 */
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4f46e5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    .card a:hover {
+      background-color: #3730a3;
+    }
+  </style>
+</head>
+<body>
+  <!-- 大标题 -->
+  <h1>Welcome to BestMan World!</h1>
+
+  <!-- 卡片容器 -->
+  <div class="card-container">
+
+    <!-- 第一个卡片：Pybullet -->
+    <div class="card">
+      <img src="img/work1.jpg" alt="simulation1" />
+      <div class="card-content">
+        <h2>Simulation</h2>
+        <p>
+          BestMan_Pybullet is a simulation platform for mobile manipulators (featuring a wheeled base and robotic arm) built on PyBullet. It offers unified hardware APIs to streamline development and experimentation.
+        </p>
+        <a href="https://www.bestmansim.com">Learn More</a>
+      </div>
+    </div>
+
+    <!-- 第二个卡片：FastUMI -->
+    <div class="card">
+      <img src="img/work2.jpg" alt="data" />
+      <div class="card-content">
+        <h2>Real Data Collection</h2>
+        <p>
+          FastUMI is a scalable, hardware-independent universal manipulation interface designed to facilitate real-world data collection and accelerate research.
+        </p>
+        <a href="www.fastumi.com">Learn More</a>
+      </div>
+    </div>
+
+    <!-- 第三个卡片：SPOC -->
+    <!-- <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=SPOC+Preview" alt="SPOC Image" />
+      <div class="card-content">
+        <h2>SPOC</h2>
+        <p>Allen Institute for AI</p>
+        <p>
+          Imitating Shortest Paths in Simulation Enables Effective Navigation and 
+          Manipulation in the Real World.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> -->
+
+    <!-- 第四个卡片：HomeRobot -->
+    <!-- <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=HomeRobot+Preview" alt="HomeRobot Image" />
+      <div class="card-content">
+        <h2>HomeRobot</h2>
+        <p>Georgia Tech, Meta AI, Carnegie Mellon, Simon Fraser</p>
+        <p>
+          HomeRobot: Open-Vocabulary Mobile Manipulation (OVMM)
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> -->
+
+    <!-- 第五个卡片：WHIRL -->
+    <!-- <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=WHIRL+Preview" alt="WHIRL Image" />
+      <div class="card-content">
+        <h2>WHIRL</h2>
+        <p>Carnegie Mellon University</p>
+        <p>
+          Human-to-Robot Imitation in the Wild
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> -->
+
+    <!-- 第六个卡片：ForceSight -->
+    <!-- <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=ForceSight+Preview" alt="ForceSight Image" />
+      <div class="card-content">
+        <h2>ForceSight</h2>
+        <p>Georgia Tech</p>
+        <p>
+          Text-Guided Mobile Manipulation with Visual-Force Goals
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </div> -->
+
+  </div>
+</body>
+</html>
